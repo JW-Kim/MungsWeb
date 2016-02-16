@@ -1,10 +1,14 @@
 var EventEmitter = require('events').EventEmitter;
 var assign = require('object-assign');
+import $ from 'jquery';
 
 var ListStore = assign({}, EventEmitter.prototype, {
   items: [],
 
   getAll: function () {
+	  $.ajax({
+		  url : '/user'
+	  })
     return this.items;
   },
 

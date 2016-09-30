@@ -10,6 +10,7 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var Link = ReactRouter.Link;
 
+//ReactDOM.render() : 최상위 컴포넌트의 인스턴스를 만들고 두번째 인수로 전달받은 DOM element에 마크업을 삽입
 ReactDOM.render(
   	<Router>
 		<Route path="/" component={Home}>

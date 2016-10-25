@@ -14,6 +14,7 @@ var ReactExamStore = assign({}, EventEmitter.prototype, {
 	        cache: false,
 			success : function(data){
 				this.reactListItems = data;
+				this.emitChange();
 				return this.reactListItems;
 				
 			}.bind(this),

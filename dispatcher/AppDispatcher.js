@@ -17,7 +17,6 @@ AppDispatcher.register(function (action) {
   		
   	case 'GET_REACT_LIST':	
   		ReactExamStore.getReactList();
-  		ReactExamStore.emitChange();
   		break;
   		
     default:

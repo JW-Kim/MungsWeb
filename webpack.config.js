@@ -17,6 +17,10 @@ module.exports = {
       { test: /\.js$/, exclude:/node_modules/, loader: 'babel-loader'},
     ]
   },
+  devServer: {
+    host :'localhost',
+  	port: 80
+  },
   plugins: [
     new CommonsChunkPlugin('init.js'),
 //    new OpenBrowserPlugin({ url: 'http://localhost:8080' })

@@ -18,7 +18,7 @@ module.exports = {
     ]
   },
   devServer: {
-    host :'localhost',
+    host :'198.199.112.52',
   	port: 80
   },
   plugins: [

@@ -18,6 +18,6 @@ module.exports = {
   },
   plugins: [
     new CommonsChunkPlugin('init.js'),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+    new OpenBrowserPlugin({ url: 'http://198.199.112.52' })
   ]
 };

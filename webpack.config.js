@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './index.jsx',
@@ -17,6 +18,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new CommonsChunkPlugin('init.js')
+    new CommonsChunkPlugin('init.js'),
+//    new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+    new HtmlWebpackPlugin({
+        template: './index.html'
+      })
   ]
 };

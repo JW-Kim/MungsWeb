@@ -1,5 +1,5 @@
 var React = require('react');
-var ReactList = require('./reactList');
+var ReactList = require('./ReactList');
 var ReactExamAction = require('../../actions/ReactExamAction');
 var ReactExamStore = require('../../stores/ReactExamStore');
 
